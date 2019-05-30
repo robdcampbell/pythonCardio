@@ -14,3 +14,20 @@ VARIABLE RULES:
   - Can have numbers but can not start with one
 """
 
+x = 1               # int
+x = 2.5             # float
+name = 'John'       # str
+is_cool = True      # bool
+
+# Multiple Assignment
+x,y,name,is_cool = (1,2.5,'John', True)
+
+# Basic math
+a = x+y
+
+# Casting 
+x = str(x)
+y = int(y)
+z = float(y)
+
+print(type(z),z)
