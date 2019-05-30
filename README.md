@@ -1,4 +1,6 @@
 # Python Cardio Sandbox
 
-## My daily Python cardio space, making lots of mistakes (learning as much as  I can each day). 
+## My Python cardio space, making lots of mistakes (learning as much as  I can, whenever I can).
+
+### Concepts to explore: facial recognition, etc...
 
