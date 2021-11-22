@@ -74,6 +74,10 @@ if x > 20:
 print("Finished")
 
 
+More Conditional Stuctures
+
+CONTINUE: https://www.youtube.com/watch?v=8DvywoWv6fI 1:41:00
+
 //////////////////////////////////////////////////////////////////////
 CH 4.
 
