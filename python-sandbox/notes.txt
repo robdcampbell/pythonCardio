@@ -1,0 +1,40 @@
+
+
+PYTHON
+
+//////////////////////////////////////////////////////////////////////
+INTRO: 
+PYTHON
+    created by Guido can Rossum
+
+Check version: 
+    python --version
+    python3 --version
+
+Enter Python
+    python3
+
+Exit Python
+    exit()
+
+Run a file (within in the proper directory): 
+    python3 filename.py
+
+Declare a var 
+    x = 1
+
+Print to the console
+    print(x)
+    print("Hello World")
+
+Key/Reserved words
+    False   class   return   is         finally
+    None    if      for      lambda     continue
+    True    def     from     while      nonlocal
+    and     del     global   not        with   
+    as      elif    try      or         yield
+    assert  else    import   pass
+    break   except  in       raise
+
+//////////////////////////////////////////////////////////////////////
+
