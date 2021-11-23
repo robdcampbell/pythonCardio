@@ -76,14 +76,52 @@ print("Finished")
 
 More Conditional Stuctures
 
+try except 
+
+
+
+
 CONTINUE: https://www.youtube.com/watch?v=8DvywoWv6fI 1:41:00
 
-//////////////////////////////////////////////////////////////////////
-CH 4.
-
 
 //////////////////////////////////////////////////////////////////////
-CH 5.
+CH 4. FUNCTIONS
+    - stored and reused 
+
+SYNTAX: 
+    def example_function():
+        print("Hello")
+        print("World")
+    
+    def ex2_function(x):
+        return x;
+        
+
+# built in functions/methods
+    print()
+    int()
+    float()
+    type()
+    str()
+
+    
+
+//////////////////////////////////////////////////////////////////////
+CH 5. LOOPS AND ITERATION 
+
+
+WHILE LOOP
+n = 5
+while n > 0:
+    print(n)
+    n = n-1
+print("Blastoff!")
+print(n)
+
+
+## Definite Loops ##
+- will run a finite number of times
+FOR IN LOOP
 
 
 //////////////////////////////////////////////////////////////////////
