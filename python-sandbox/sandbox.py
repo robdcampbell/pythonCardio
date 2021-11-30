@@ -216,4 +216,17 @@ def loop_stuff(x):
                 # print("There were ", count, " lines starting with 'line' in ", fname)
 
 # ////////////////////////////////////
-#  3:46:16
+#  try /  except with Bad File names 
+
+fname = input("Enter the file name: ")
+try:
+        fhand = open(fname)
+except:
+        print("File cannot be opened: ", fname)
+        # Quit the whole python doc if it detects and error
+        quit()
+count = 0
+for line in fhand:
+        if line.startswith('line'):
+                count = count +1
+print("There were ", count, " lines starting with 'line' in ", fname)
