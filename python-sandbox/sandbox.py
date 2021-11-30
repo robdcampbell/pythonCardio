@@ -142,3 +142,34 @@ def loop_stuff(x):
 # READING FILES //////////////////////////////////
 
 # 3:27:50 https://www.youtube.com/watch?v=8DvywoWv6fI
+
+# //////////////
+# Using open() - open(filename, mode)
+
+
+# //////////////
+# new line :  \n
+
+        # new_line_example = "Hello\nWorld!"
+        # print(new_line_example)
+
+
+# //////////////
+# File Handle as a Sequence - each line of an opened txt file can be treated as a string in the sequence
+
+# file lines can be iterated through using a for loop
+
+                # xfile = open('mbox.txt')
+                # for cheese in xfile:
+                #         print(cheese)
+
+
+
+        
+# //////////////
+# Reading the *Whole file - we can read the wholefile (newlines and all) into a single string
+
+fhand = open("mbox.txt")
+inp = fhand.read()
+# print(len(inp))
+print(inp)
