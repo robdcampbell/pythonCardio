@@ -169,7 +169,51 @@ def loop_stuff(x):
 # //////////////
 # Reading the *Whole file - we can read the wholefile (newlines and all) into a single string
 
-fhand = open("mbox.txt")
-inp = fhand.read()
-# print(len(inp))
-print(inp)
+                # fhand = open("mbox.txt")
+                # inp = fhand.read()
+                # # print(len(inp))
+                # print(inp)
+
+# //////////////////////////////////////
+# Searching through a file - we can put an id statement in a for loop to only print lines that meet some criteria 
+
+                # fhand = open("mbox.txt")
+                # print(fhand.read())
+                # for line in fhand:
+                #         if line.startswith("line"):
+                #                 print(line)
+
+# ////////////////////////////////////
+# skipping with continue 
+
+                # fhand = open('mbox.txt')
+                # for line in fhand:
+                #         line = line.rstrip()
+                #         if not line.startswith("line"):
+                #                 continue
+                #         print(line)
+
+
+# ////////////////////////////////////
+# Using in to select lines 
+                # fhand = open('mbox.txt')
+                # for line in fhand:
+                #         line = line.rstrip()
+                #         if not "line" in line:
+                #                 continue
+                #         print(line)
+
+
+# ////////////////////////////////////
+# Prompt for a file name - respond with open() 
+
+                # fname = input("Enter the file name: ")
+                # fhand = open(fname)
+                # count = 0
+                # for line in fhand:
+                #         if line.startswith('line'):
+                #                 count = count +1
+                # print("There were ", count, " lines starting with 'line' in ", fname)
+
+# ////////////////////////////////////
+#  3:46:16
