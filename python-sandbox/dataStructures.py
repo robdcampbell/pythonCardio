@@ -62,25 +62,46 @@
 #   word_counts[word ] = word_counts.get(word, 0) +1
 # print(word_counts)
 
-fname = input("Enter File: ")
-if len(fname) < 1: fname = 'clown.txt'
+                # fname = input("Enter File: ")
+                # if len(fname) < 1: fname = 'clown.txt'
 
-hand = open(fname)
+                # hand = open(fname)
 
-di = dict()
-for line in hand:
-  line = line.rstrip()
-  # print(line)
-  wds = line.split()
-  # print(wds)
-  for w in wds:
-    
-    if w in di:
-      di[w] = di[w]+1
-    else:
-      di[w] = 1
-      # print("***NEW***")
-    print(w, di[w])
-print(di)
+                # di = dict()
+                # for line in hand:
+                # line = line.rstrip()
+                # # print(line)
+                # wds = line.split()
+                # # print(wds)
+                # for w in wds:
+                
+                # if w in di:
+                # di[w] = di[w]+1
+                # else:
+                # di[w] = 1
+                # # print("***NEW***")
+                # print(w, di[w])
+                # print(di)
 
-# 5:23:07 - TUPLES
+# /////////////////////////////////////
+# 5:23:07 - TUPLES.   Like lists, but they are immutable 
+
+                # x = (1,2,3,4,5)
+                # print(x)
+
+# /////////////////////////////////////
+# SORTING TUPLES.   Like lists, but they are immutable 
+
+# Sort by values 
+c = {"a":10, "b":1, "c":22}
+tmp = list()
+for k,v in c.items():
+        tmp.append((v,k))
+
+tmp = sorted(tmp,reverse=True)
+print(tmp)
+tmp = sorted(tmp)
+print(tmp)
+
+
+# 5:39:00
