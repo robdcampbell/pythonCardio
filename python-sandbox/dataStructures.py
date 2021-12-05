@@ -84,3 +84,5 @@ for line in hand:
 print(di)
 
 # 5:23:07 - TUPLES
+
+#cop ok ok ok
