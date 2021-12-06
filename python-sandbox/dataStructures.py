@@ -136,4 +136,4 @@ print(tmp)
 
 def py5(x):
   for val in x:
-    
+    print(val)
