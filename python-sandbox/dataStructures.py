@@ -62,7 +62,7 @@
 #   word_counts[word ] = word_counts.get(word, 0) +1
 # print(word_counts)
 
-<<<<<<< HEAD
+
 fname = input("Enter File: ")
 if len(fname) < 1: fname = 'clown.txt'
 
@@ -87,7 +87,7 @@ print(di)
 # 5:23:07 - TUPLES
 
 #cop ok ok ok
-=======
+
                 # fname = input("Enter File: ")
                 # if len(fname) < 1: fname = 'clown.txt'
 
@@ -131,4 +131,9 @@ print(tmp)
 
 
 # 5:39:00
->>>>>>> 804ce503d9c0124fe9f1b3d32a139718c412f746
+# >>>>>>> 804ce503d9c0124fe9f1b3d32a139718c412f746
+
+
+def py5(x):
+  for val in x:
+    
