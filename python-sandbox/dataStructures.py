@@ -63,26 +63,26 @@
 # print(word_counts)
 
 
-fname = input("Enter File: ")
-if len(fname) < 1: fname = 'clown.txt'
+        # fname = input("Enter File: ")
+        # if len(fname) < 1: fname = 'clown.txt'
 
-hand = open(fname)
+        # hand = open(fname)
 
-di = dict()
-for line in hand:
-  line = line.rstrip()
-  # print(line)
-  wds = line.split()
-  # print(wds)
-  for w in wds:
-    
-    if w in di:
-      di[w] = di[w]+1
-    else:
-      di[w] = 1
-      # print("***NEW***")
-    print(w, di[w])
-print(di)
+        # di = dict()
+        # for line in hand:
+        #   line = line.rstrip()
+        #   # print(line)
+        #   wds = line.split()
+        #   # print(wds)
+        #   for w in wds:
+            
+        #     if w in di:
+        #       di[w] = di[w]+1
+        #     else:
+        #       di[w] = 1
+        #       # print("***NEW***")
+        #     print(w, di[w])
+        # print(di)
 
 # 5:23:07 - TUPLES
 
@@ -119,21 +119,45 @@ print(di)
 # SORTING TUPLES.   Like lists, but they are immutable 
 
 # Sort by values 
-c = {"a":10, "b":1, "c":22}
-tmp = list()
-for k,v in c.items():
-        tmp.append((v,k))
+    # c = {"a":10, "b":1, "c":22}
+    # tmp = list()
+    # for k,v in c.items():
+    #         tmp.append((v,k))
 
-tmp = sorted(tmp,reverse=True)
-print(tmp)
-tmp = sorted(tmp)
-print(tmp)
+    # tmp = sorted(tmp,reverse=True)
+    # print(tmp)
+    # tmp = sorted(tmp)
+    # print(tmp)
 
 
 # 5:39:00
 # >>>>>>> 804ce503d9c0124fe9f1b3d32a139718c412f746
 
 
-def py5(x):
-  for val in x:
-    print(val)
+# TOP 10 most common words example 2 ways:
+fhand = open("clown.txt")
+counts = dict()
+for line in fhand:
+  words = line.split()
+  for word in words:
+    counts[word] = counts.get(word,0) + 1
+
+lst = list()
+for key, val in counts.items():
+  newtup = (val,key)
+  lst.append(newtup)
+
+lst = sorted(lst, reverse=True)
+for val, key in lst[:10]:
+  print(key, val)
+
+# SHORTER / LAMBDA Version - LIST COMPREHENSION
+c = {"a":10, "b":1, "c":22}
+print(sorted([ (v,k) for k,v in c.items() ] ) )
+
+# 1 - prints the list 
+# 2 - sorts the list (in default, ascending order)
+# 3a - implicitly creates a tuple of reversed key + value pairs
+# 3b - loops through each "item" in the "c" dictionary
+
+
