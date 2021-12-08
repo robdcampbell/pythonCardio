@@ -12,3 +12,5 @@ while True:
         break
     print(data.decode())
 mysock.close()
+
+# 6:44:00
