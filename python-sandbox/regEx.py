@@ -2,6 +2,12 @@
 # RegEx in Python 
 
 
+# to use: 
+# import re
+
+# re.search()
+# re.findall()
+
 '''
 ^        - Matches the beginning of a line
 $        - Matches the end of a line
@@ -19,3 +25,4 @@ $        - Matches the end of a line
 )        - indicates where string extraction is to end
 '''
 
+# Continue at 6:13:00 
