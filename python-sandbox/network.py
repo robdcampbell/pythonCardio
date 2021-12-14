@@ -18,7 +18,7 @@
 #  /////////////////////////////////////////
 #  urllib /////////////////////////////////////////
 
-import urllib.request, urllib.parse, urllib.error
+# import urllib.request, urllib.parse, urllib.error
 
 # 1) 
         # fhand = urllib.request.urlopen("http://data.pr4e.org/romeo.txt")
@@ -27,14 +27,14 @@ import urllib.request, urllib.parse, urllib.error
         #     print(line.decode().strip())
 
 # 2) - Dictionary with word frquency 
-fhand = urllib.request.urlopen("http://data.pr4e.org/romeo.txt")
+                # fhand = urllib.request.urlopen("http://data.pr4e.org/romeo.txt")
 
-counts = dict()
-for line in fhand:
-    words = line.decode().split()
-    for word in words:
-        counts[word] = counts.get(word,0) +1
-print(counts)
+                # counts = dict()
+                # for line in fhand:
+                # words = line.decode().split()
+                # for word in words:
+                #         counts[word] = counts.get(word,0) +1
+                # print(counts)
 
 
 
@@ -48,4 +48,25 @@ print(counts)
 
 # example: pull this file: https://www.py4e.com/code3/bs4.zip
 
+
+ # 7:13:00  - Beautiful Soup Example 
+
+import urllib.request, urllib.parse, urllib.error
+from bs4 import BeautifulSoup
+
+url = input("Enter - ")   #enter: http://www.dr-chuck.com/page1.htm
+html = urllib.request.urlopen(url).read()
+soup = BeautifulSoup(html, "html.parser")
+
+#Retrieve all of the anchor tags 
+tags = soup("a")
+for tag in tags: 
+        print(tag.get('href', None))
+
+# ////////////////////////////////////////////////
+# ////////////////////////////////////////////////
+
+# Installing beautiful soup - 7:15:49
+# 1) pip3 install beautifulsoup4 
+# 2) download the full zip
 
