@@ -51,17 +51,17 @@
 
  # 7:13:00  - Beautiful Soup Example 
 
-import urllib.request, urllib.parse, urllib.error
-from bs4 import BeautifulSoup
+                # import urllib.request, urllib.parse, urllib.error
+                # from bs4 import BeautifulSoup
 
-url = input("Enter - ")   #enter: http://www.dr-chuck.com/page1.htm
-html = urllib.request.urlopen(url).read()
-soup = BeautifulSoup(html, "html.parser")
+                # url = input("Enter - ")   #enter: http://www.dr-chuck.com/page1.htm
+                # html = urllib.request.urlopen(url).read()
+                # soup = BeautifulSoup(html, "html.parser")
 
-#Retrieve all of the anchor tags 
-tags = soup("a")
-for tag in tags: 
-        print(tag.get('href', None))
+                # #Retrieve all of the anchor tags 
+                # tags = soup("a")
+                # for tag in tags: 
+                #         print(tag.get('href', None))
 
 # ////////////////////////////////////////////////
 # ////////////////////////////////////////////////
@@ -70,3 +70,49 @@ for tag in tags:
 # 1) pip3 install beautifulsoup4 
 # 2) download the full zip
 
+
+        # import urllib.request, urllib.parse, urllib.error
+        # from bs4 import BeautifulSoup
+        # import ssl 
+
+        # # Ignore SSL Cert errors
+        # ctx = ssl.create_default_context()
+        # ctx.check_hostname = False
+        # ctx.verify_mode = ssl.CERT_NONE
+
+        # url = input('Enter - ')
+        # html = html = urllib.request.urlopen(url, context=ctx).read()
+        # soup = BeautifulSoup(html, "html.parser")
+
+        # # Retreive all of the anchor tags
+        # tags =soup("a")
+        # for tag in tags:
+        #         print(tag.get("href", None))
+
+
+# ////////////////////////////////////////////////////////
+# ////////////////////////////////////////////////////////
+# JSON - 7:52:00
+
+# - cont: 8:00:00
+
+# example: 
+
+import json 
+
+data = '''
+{
+        "name": "Chuck",
+        "Phone": {
+           "type": "intl",
+           "number":"+1 734 303 4456"   
+        },
+        "email": {
+           "hide": "yes"
+        }
+}
+'''
+
+info = json.loads(data)
+print("Name: ", info["name"])
+print("Hide: ", info["email"]["hide"])
