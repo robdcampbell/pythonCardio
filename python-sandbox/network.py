@@ -116,3 +116,6 @@ data = '''
 info = json.loads(data)
 print("Name: ", info["name"])
 print("Hide: ", info["email"]["hide"])
+
+
+# 8:11:00 - Using Google Maps API to retreive JSON geoData
