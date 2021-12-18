@@ -119,3 +119,5 @@ print("Hide: ", info["email"]["hide"])
 
 
 # 8:11:00 - Using Google Maps API to retreive JSON geoData
+
+# 8:30:00 continued web services
