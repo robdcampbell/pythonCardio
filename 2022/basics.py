@@ -53,8 +53,10 @@ num3 = 1j   # complex
 # print(type(num3)) # <class 'complex'>
 
 
-
-
+#### STRINGS
+# Slicing strings: 
+b = "Hello, World!"
+print(b[2:5])
 
 
 
