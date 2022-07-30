@@ -73,7 +73,7 @@ strExample = "Hello, World!"
 b = "Hello, World!"
 # print(b[2:5])
 
-# Iteratin number in for-loop Python
+# Iteration number in for-loop Python
 a_list = ["a", "b", "c", "d"]
 
 # for iteration, item in enumerate(a_list):
@@ -83,3 +83,9 @@ count = 0
 for x in a_list:
         print(count)
         count = count+1
+
+
+### Checking for presence of a str within a string
+txt = "The best things in life are free!"
+print("free" in txt) # returns true
+print("3.50" in txt) # returns false
