@@ -54,9 +54,32 @@ num3 = 1j   # complex
 
 
 #### STRINGS
+
+# Loop through characters in an string
+for val in "Hello World":
+    val
+    # print("letter: " + val)
+
+# String length
+strExample = "Hello, World!"
+# print(len(strExample))
+# print(strExample[0])
+# print(strExample[0:3])
+# print(strExample[1:])       # slice to the end of the str
+# print(strExample[-6:-1])    # negative indexing
+# print(strExample)           # not mutated
+
 # Slicing strings: 
 b = "Hello, World!"
-print(b[2:5])
+# print(b[2:5])
 
+# Iteratin number in for-loop Python
+a_list = ["a", "b", "c", "d"]
 
+# for iteration, item in enumerate(a_list):
+#   print(iteration)
 
+count = 0
+for x in a_list:
+        print(count)
+        count = count+1
