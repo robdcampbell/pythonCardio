@@ -99,4 +99,13 @@ for char in strToRev:
     newStr = strToRev[count] + newStr 
     count+=1
 
-print(newStr)
+#function to rev a string
+def reverseStr(string):
+    newStr = ''
+    count = 0
+    for char in strToRev:
+        newStr = strToRev[count] + newStr 
+        count+=1
+    return newStr
+
+print(reverseStr(strToRev) + "!!!")
