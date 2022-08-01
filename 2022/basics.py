@@ -87,5 +87,16 @@ for x in a_list:
 
 ### Checking for presence of a str within a string
 txt = "The best things in life are free!"
-print("free" in txt) # returns true
-print("3.50" in txt) # returns false
+# print("free" in txt) # returns true
+# print("3.50" in txt) # returns false
+
+### Reverse a str without using a built in method (aka with a loop)
+
+strToRev = "Hello World"
+newStr = ''
+count = 0
+for char in strToRev:
+    newStr = strToRev[count] + newStr 
+    count+=1
+
+print(newStr)
