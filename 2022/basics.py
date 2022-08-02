@@ -109,3 +109,14 @@ def reverseStr(string):
     return newStr
 
 print(reverseStr(strToRev) + "!!!")
+
+# String modification:
+a = "Hello, World!"
+print(a.upper()) #HELLO, WORLD!
+print(a.lower()) #hello, world!
+print(a.strip()) # returns "Hello, World!"
+print(a.replace("H", "J")) #Jello, World!
+print(a.split(",")) # returns ['Hello', ' World!']
+
+
+
