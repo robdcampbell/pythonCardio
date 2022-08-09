@@ -81,7 +81,7 @@ a_list = ["a", "b", "c", "d"]
 
 count = 0
 for x in a_list:
-        print(count)
+        # print(count)
         count = count+1
 
 
@@ -108,15 +108,19 @@ def reverseStr(string):
         count+=1
     return newStr
 
-print(reverseStr(strToRev) + "!!!")
+# print(reverseStr(strToRev) + "!!!")
 
 # String modification:
 a = "Hello, World!"
-print(a.upper()) #HELLO, WORLD!
-print(a.lower()) #hello, world!
-print(a.strip()) # returns "Hello, World!"
-print(a.replace("H", "J")) #Jello, World!
-print(a.split(",")) # returns ['Hello', ' World!']
+# print(a.upper()) #HELLO, WORLD!
+# print(a.lower()) #hello, world!
+# print(a.strip()) # returns "Hello, World!"
+# print(a.replace("H", "J")) #Jello, World!
+# print(a.split(",")) # returns ['Hello', ' World!']
+
+space = a.replace("l","r")
+
+print(space)
 
 
 
